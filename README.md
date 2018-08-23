@@ -17,4 +17,4 @@ The Homography Transform requires 4 points to define an original plane and anoth
 
 Example:
 
-<img alt="homography" src="/figures/homography_example.png" width="500">
+<img alt="homography" src="/figures/homography_example.png" width="800">
