@@ -39,6 +39,7 @@ def plot_2_planes_2_points(xx, yy, XX, YY, P, P1):
 if __name__=='__main__':
     # define points of original plane
     arr = np.array([[500, 1700, 2000, 550], [500, 430, 2100, 2200]])
+    
     # point in original plane
     P = np.array([1400, 800])
 
