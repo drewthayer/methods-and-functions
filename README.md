@@ -33,7 +33,7 @@ These coordinates are precise, but not useful for most applications because they
 
 In the _convert_to_cartesian_ method, the barycentric coordinates (x) are multiplied by the target plane coordinates to find the target point in x,y coordinates.
 
-example coming soon... 
+<img alt="barycentric" src="/figures/barycentric_example.png" width="800">
 
 
 ### Signal Processing Tools
