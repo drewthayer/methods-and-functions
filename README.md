@@ -46,8 +46,8 @@ Description in progress...
 
 Tools to help with reading audio files
 
- - convert_audio_file:  uses ffmpeg (can install with homebrew) to convert audio files, e.g. from .m4a to .wav
- - read_wavefile:       uses python's wave library to read a .wav file and return the signal and framerate
+ - _convert_audio_file_:  uses ffmpeg (can install with homebrew) to convert audio files, e.g. from .m4a to .wav
+ - _read_wavefile_:       uses python's wave library to read a .wav file and return the signal and framerate
 
 
 ### JSON Utils
