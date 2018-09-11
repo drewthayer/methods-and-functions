@@ -59,3 +59,11 @@ __write_or_update_to_json__
   - writes a new dictionary to a JSON file
   - if the JSON file doesn't exist, it creates a new file
   - if the JSON file already exists, it appends to the file
+
+### File Utils
+
+utilities for working with file io
+
+  - move files (input_dir, output_dir)
+  - copy files (input_dir, output_dir)
+  - count number of files in a directory
