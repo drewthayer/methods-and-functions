@@ -54,6 +54,8 @@ class LowpassFilterAudioParser(object):
         ii = self.extrema_idx[keep_if_true]
         return ii
 
+################################################################################
+
 
 class IterativeThresholdAudioParser(object):
     def __init__(self, window, peak_scale_factor, trough_scale_factor):
@@ -107,7 +109,6 @@ class IterativeThresholdAudioParser(object):
             i += 1
 
         return idxs
-
 
     def fit(self, signal):
         self.signal = signal

@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from CoordinateTransforms.Quadrilateral import HomographyTransform
-from CoordinateTransforms.Triangle import BarycentricTransform
+from CoordinateTransforms.plane_transforms import HomographyTransform
+from CoordinateTransforms.plane_transforms import BarycentricTransform
 
 def plot_plane_and_point_labeled(xx, yy, P):
     corner_labels = ['p0', 'p1', 'p2', 'p3']
