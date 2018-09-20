@@ -1,5 +1,16 @@
-## methods-and-functions
-Mathematical methods and utility functions I've written in python to help with work and side projects. Description for each module:
+# methods-and-functions
+Mathematical methods and utility functions I've written in python to help with work and side projects.
+
+## Table of Contents:
+
+  - CoordinateTransforms
+  - SignalProcessing
+  - AudioProcessing
+  - JsonUtils
+  - FileUtils
+  - WebScraping
+
+## Module Descriptions:
 
 ### CoordinateTransforms
 mathematical methods for transforming points between coordinate systems
@@ -84,6 +95,9 @@ __check_json_length.py__: checks the length of a dictionary in a .json file
   $ python check_json_length.py some_file.json
   ~~~
 
+__dict_methods.py__: methods for working with dictionaries
+  - _sort_annotations_dict_to_list_
+
 ### FileUtils
 utilities for working with file io
 __move_copy.py__: functions to move/copy files between directories
@@ -94,3 +108,11 @@ __count_files.py__: count number of files in a directory, prints integer (n_file
   ~~~
   $ python count_files.py some_directory
   ~~~
+
+### WebScraping
+
+__selenium_scrapers.py__: tools for using Selenium for scraping webpages with asynchronous javascript
+  - _AirbnbSpider()_: crawls Airbnb webpages based on city, state, min_price, max_price in increments (default $10), enters each individual listing and returns listing data and photos from listing
+      - see script for cmd line args
+  - _scrape_airbnb_get_images.py_: function for implementing AirbnbSpider() class
+  - _soup_example.py_: example of scraping images with BeautifulSoup
