@@ -15,6 +15,7 @@ Mathematical methods and utility functions I've written in python to help with w
 
 ### DataTools
 tools for working with data
+
 __imputation.py__: tools for imputing missing values in a data set
   - df_impute_previous_index
         - imputes missing values based on prior index in pandas dataframe, uses np array for speed. Preserves column names and indices.
@@ -89,6 +90,7 @@ __audio_tools.py__: Tools to help with reading audio files
 
 ### JsonUtils
 utilities for working with JSON files
+
 __write_tools.py__
   - _write_or_update_to_json_
       - writes a new dictionary to a JSON file
@@ -107,6 +109,7 @@ __dict_methods.py__: methods for working with dictionaries
 
 ### FileUtils
 utilities for working with file io
+
 __move_copy.py__: functions to move/copy files between directories
   - _move_files.py_
   - _copy_files.py_
