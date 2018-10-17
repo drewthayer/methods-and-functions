@@ -3,6 +3,7 @@ Mathematical methods and utility functions I've written in python to help with w
 
 ## Table of Contents:
 
+  - DataTools
   - CoordinateTransforms
   - SignalProcessing
   - AudioProcessing
@@ -11,6 +12,12 @@ Mathematical methods and utility functions I've written in python to help with w
   - WebScraping
 
 ## Module Descriptions:
+
+### DataTools
+tools for working with data
+__imputation.py__: tools for imputing missing values in a data set
+  - df_impute_previous_index
+        - imputes missing values based on prior index in pandas dataframe, uses np array for speed. Preserves column names and indices.
 
 ### CoordinateTransforms
 mathematical methods for transforming points between coordinate systems
@@ -101,13 +108,16 @@ __dict_methods.py__: methods for working with dictionaries
 ### FileUtils
 utilities for working with file io
 __move_copy.py__: functions to move/copy files between directories
-  - _move_files_
-  - _copy_files_
+  - _move_files.py_
+  - _copy_files.py_
 
 __count_files.py__: count number of files in a directory, prints integer (n_files) to terminal
   ~~~
   $ python count_files.py some_directory
   ~~~
+
+__json_to_csv.py__
+  - converts a one-level dictionary in a .json file to a row-wise .csv
 
 ### WebScraping
 
