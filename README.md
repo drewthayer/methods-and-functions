@@ -106,6 +106,9 @@ __check_json_length.py__: checks the length of a dictionary in a .json file
 
 __dict_methods.py__: methods for working with dictionaries
   - _sort_annotations_dict_to_list_
+  
+__json_to_csv.py__
+  - converts a one-level dictionary in a .json file to a row-wise .csv
 
 ### FileUtils
 utilities for working with file io
@@ -118,9 +121,6 @@ __count_files.py__: count number of files in a directory, prints integer (n_file
   ~~~
   $ python count_files.py some_directory
   ~~~
-
-__json_to_csv.py__
-  - converts a one-level dictionary in a .json file to a row-wise .csv
 
 ### WebScraping
 
