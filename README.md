@@ -15,6 +15,7 @@ Mathematical methods and utility functions I've written in python to help with w
 
 ### DataTools
 tools for working with data
+
 __imputation.py__: tools for imputing missing values in a data set
   - df_impute_previous_index
         - imputes missing values based on prior index in pandas dataframe, uses np array for speed. Preserves column names and indices.
