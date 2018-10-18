@@ -5,13 +5,12 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser('convert a .json dictionary to a row-wise csv')
-    parser.add_argument('--dir', dest='dir', required=True, help='relative path to dir')
-    parser.add_argument('--fname', dest='fname', required=True, help='filename with .json extension')
+    parser.add_argument('-f', dest='filepath', required=True, help='relative path to file')
     args = parser.parse_args()
     # load json file
     #dir = 'object_counts_total'
     #fname = 'object_counts_exterior_2018-10-10.json'
-    with open(os.path.join(args.dir, args.fname), 'r') as f:
+    with open(args.filepath, 'r') as f:
         d = json.load(f)
 
     # convert to dataframe
@@ -19,9 +18,9 @@ def main():
     df.columns=['count']
 
     # save as csv
-    csv_name = args.fname.replace('.json','.csv')
-    df.to_csv(os.path.join(args.dir, csv_name), sep=',', header=False)
-    print('{} written'.format(csv_name))
+    csv_file = args.filepath.replace('.json','.csv')
+    df.to_csv(csv_file, sep=',', header=False)
+    print('\n {} written to csv'.format(csv_file))
 
 if __name__=='__main__':
     ''' example: $ python json_to_csv.py --dir object_counts_total
