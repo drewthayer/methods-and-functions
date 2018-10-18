@@ -4,12 +4,11 @@ import pandas as pd
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser('convert a .json dictionary to a row-wise csv')
-    parser.add_argument('-f', dest='filepath', required=True, help='relative path to file')
+    parser = argparse.ArgumentParser('convert a .json one-level dictionary to a row-wise csv')
+    parser.add_argument('-f', dest='filepath', required=True, help='relative path including file')
     args = parser.parse_args()
+
     # load json file
-    #dir = 'object_counts_total'
-    #fname = 'object_counts_exterior_2018-10-10.json'
     with open(args.filepath, 'r') as f:
         d = json.load(f)
 
@@ -23,6 +22,5 @@ def main():
     print('\n {} written to csv'.format(csv_file))
 
 if __name__=='__main__':
-    ''' example: $ python json_to_csv.py --dir object_counts_total
-        --fname object_counts_interior_2018-10-17.json '''
+    ''' example: $ python json_to_csv.py -f object_counts_total/object_counts_interior_2018-10-17.json '''
     main()
